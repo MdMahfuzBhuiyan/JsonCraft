@@ -27,7 +27,9 @@ Console.WriteLine(json);
 var result = JsonSerializer.Deserialize<User>(json);
 Console.WriteLine(result.Name);
 
-How It Works
+
+
+## How It Works
 1. Reading & Parsing JSON
 Instead of regular expressions, I wrote a custom parser (JsonParser.cs) that reads through the JSON text character by character:
 
