@@ -1,8 +1,10 @@
 # Custom JSON Serializer (Assignment 1)
 
-This is a custom JSON serializer and deserializer built from scratch in C# without using `System.Text.Json` or `Newtonsoft.Json`. 
+This is a custom JSON serializer and deserializer built from scratch in C#  without using `System.Text.Json` or `Newtonsoft.Json`. 
 
 It uses C# reflection to inspect class properties dynamically, a custom recursive parser to read JSON text, and basic collection types to reconstruct objects.
+
+---
 
 ## Supported Types
 
@@ -11,6 +13,8 @@ It uses C# reflection to inspect class properties dynamically, a custom recursiv
 - Objects: Plain classes and nested objects at any depth
 - Collections: Arrays, `List<T>`, and `IEnumerable<T>`
 - Dictionaries: `Dictionary<string, object>` or `Dictionary<string, T>`
+
+---
 
 ## How to Use
 
@@ -28,8 +32,7 @@ var result = JsonSerializer.Deserialize<User>(json);
 Console.WriteLine(result.Name);
 
 
-
-## How It Works
+How It Works
 1. Reading & Parsing JSON
 Instead of regular expressions, I wrote a custom parser (JsonParser.cs) that reads through the JSON text character by character:
 
