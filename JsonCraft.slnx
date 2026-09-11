@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="JsonCraft.App/JsonCraft.App.csproj" />
+  <Project Path="JsonCraft.Core/JsonCraft.Core.csproj" />
+</Solution>
