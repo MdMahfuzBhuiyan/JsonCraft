@@ -1,4 +1,4 @@
-# Custom JSON Serializer (Assignment 1)
+# Custom JSON Serializer
 
 This is a custom JSON serializer and deserializer built from scratch in C# without using `System.Text.Json` or `Newtonsoft.Json`. 
 
